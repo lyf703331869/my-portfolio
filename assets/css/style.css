@@ -1,19 +1,22 @@
 :root {
+  --body: #fcece1;
   --header: #13293d;
   --header-h1: #ffffff;
   --link: #ffffff;
+  --greeting-p: #303030;
   --footer: #13293d;
   --footer-content: #ffffff;
 }
 
 * {
-  border: solid rgb(245, 188, 188) 1px;
+  /* border: solid rgb(245, 188, 188) 1px; */
 }
 
 body {
   display: flex;
   line-height: 1.5em;
   flex-direction: column;
+  background-color: var(--body);
 }
 
 header {
@@ -29,8 +32,21 @@ header {
 }
 
 .banner #greeting {
-  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  flex: 1 0 0;
+}
+
+#greeting h2 {
+  margin-top: 30%;
+  font-size: 40px;
+}
+
+#greeting p {
+  font-style: italic;
+  color: var(--greeting-p);
+  margin: 1em;
 }
 
 .banner aside {
@@ -38,8 +54,8 @@ header {
 }
 
 .banner aside img {
-  height: 600px;
-  width: 600px;
+  max-width: 100%;
+  height: auto;
 }
 
 #site-header h1 {
@@ -91,6 +107,16 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
+  figure,
+  section {
+    flex-direction: column;
+  }
+
+  #greeting h2 {
+    margin-top: 20%;
+    font-size: 30px;
+  }
+
   header {
     flex-direction: column;
     padding: 0.5em 0;
