@@ -1,0 +1,108 @@
+:root {
+  --header: #13293d;
+  --header-h1: #ffffff;
+  --link: #ffffff;
+  --footer: #13293d;
+  --footer-content: #ffffff;
+}
+
+* {
+  border: solid rgb(245, 188, 188) 1px;
+}
+
+body {
+  display: flex;
+  line-height: 1.5em;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header);
+  padding: 1% 20px;
+}
+.banner {
+  display: flex;
+  height: 600px;
+}
+
+.banner #greeting {
+  flex: 1 0 0;
+  align-items: center;
+}
+
+.banner aside {
+  flex: 1 0 0;
+}
+
+.banner aside img {
+  height: 600px;
+  width: 600px;
+}
+
+#site-header h1 {
+  font-style: italic;
+  font-family: Impact;
+  font-size: 300%;
+  margin: 2% 0;
+  color: var(--header-h1);
+}
+
+#site-header h1::after {
+  content: "Liu";
+  color: gold;
+  margin-left: 6px;
+}
+
+#site-nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 350px;
+  transform: translate(-5%, 0);
+}
+
+#site-nav ul li {
+  width: 70px;
+  text-align: center;
+  list-style-type: none;
+}
+
+#site-nav ul li a {
+  font-weight: bolder;
+  font-family: "Lucida Sans", "Lucida Sans Regular", sans-serif;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: var(--link);
+}
+
+article {
+  height: 800px;
+}
+
+footer {
+  background-color: var(--footer);
+}
+
+footer p {
+  color: var(--footer-content);
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 0.5em 0;
+  }
+
+  #site-nav ul {
+    min-width: 300px;
+    transform: translate(0, 0);
+    margin-top: 0.5em;
+  }
+
+  #site-nav ul li a {
+    font-size: 1em;
+  }
+}
