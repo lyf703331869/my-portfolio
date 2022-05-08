@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
+
   <body>
+
     <header id="site-header">
       <h1>Yafei</h1>
       <nav id="site-nav">
@@ -20,20 +22,27 @@
         </ul>
       </nav>
     </header>
+
     <figure class="banner">
+
       <section id="greeting">
         <h2>Hello! I Am Yafei Liu</h2>
         <p>A non-experienced web designer</p>
       </section>
+
       <aside id="self-image">
         <img
           src="./assets/images/profile-photo.png"
           alt="A photo shows a handsome man with the most sincere smile."
         />
       </aside>
+
     </figure>
-    <br />
+
+    <div id="br"></div>
+
     <article>
+
       <section id="work">
         <h2>Work</h2>
         <div>
@@ -43,6 +52,7 @@
               ><img
                 src="./assets/images/mini-project.png"
                 alt="A screenshot photo shows Yafei's work of a landing page."
+                target="_blank"
                 id="mini-project"
             /></a>
           </div>
@@ -52,32 +62,65 @@
               ><img
                 src="./assets/images/seo-site-refractor.png"
                 alt="A screenshot photo shows Yafei's first homework."
+                target="_blank"
                 id="seo-site-refractor"
             /></a>
           </div>
         </div>
       </section>
+
+      <div id="br"></div>
+
       <section id="about">
         <h2>About</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi natus,
-          vitae doloremque facere cupiditate adipisci eveniet, itaque magnam
-          nemo earum vero ipsum unde modi laboriosam obcaecati dolore,
-          exercitationem explicabo est.
-        </p>
+        <div>
+          <div id="about-1">
+            <img
+                src="./assets/images/intro.png"
+                alt="Yafei's portrait"
+                id="portrait"
+            />
+          </div>
+          <div id="about-2">
+            <p><strong>Name:</strong> &nbsp&nbsp&nbsp&nbsp&nbspYafei Liu
+              <br>
+              <strong>Age:</strong>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span data-descr="31">XX</span>
+              <br>
+              <strong>Address:</strong> &nbspNew York, USA
+              <br>
+              <strong>Phone:</strong>&nbsp&nbsp&nbsp&nbsp 917-340-52<span data-descr="93">XX</span>
+              <br>
+              <strong>Email:</strong>&nbsp&nbsp&nbsp&nbsp&nbsp lyf7033318<span data-descr="69">XX</span>@gmail.com
+            </p>
+          </div>
       </section>
+
+      <div id="br"></div>
+
       <section id="contact">
         <h2>Contact</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat,
-          voluptas hic. Velit eveniet tempore distinctio repudiandae sit sunt
-          vero ut consectetur necessitatibus quae adipisci at, alias expedita,
-          iure facere autem.
-        </p>
+        <form id="contact-info">
+          <br>
+          <input type="text" placeholder="Name *" name="name" maxlength="100">
+          <br>
+          <input type="email" placeholder="Email *" name="email" maxlength="100">
+          <br>
+          <input type="phone" placeholder="Phone *" name="phone" maxlength="100">
+          <br>
+          <button type="submit">Send</button>
+          <br>
+      </form>
       </section>
+
     </article>
+
   </body>
+
   <footer>
+    
+    <br>  
     <p>2022 © All Rights Reserved by Yafei Liu</p>
+
   </footer>
+
 </html>
