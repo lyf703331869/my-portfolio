@@ -8,10 +8,6 @@
   --footer-content: #ffffff;
 }
 
-* {
-  /* border: solid rgb(245, 188, 188) 1px; */
-}
-
 body {
   display: flex;
   line-height: 1.5em;
@@ -140,7 +136,7 @@ article h2 {
 #mini-project:active,
 #seo-site-refractor:hover,
 #seo-site-refractor:active {
-  transform: rotate(-2deg);
+  transform: rotate(-2deg) scale(1.1);
   border: solid 5px #13293d;
   box-shadow: 0px 0px 15px #13293d;
 }
